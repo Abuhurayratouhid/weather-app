@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color: aliceblue;
+}
+
+.container{
+    max-width: 600px;
+    /* max-height: 600px; */
+    background: rgb(234, 240, 234);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=400");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input[type="text"]{
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+form input[type="submit"]{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: darkcyan;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: aliceblue;
+    transition: background-color 0.5s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(9, 97, 97);
+}
+
+.icon img{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+    background: rgb(135, 135, 135);
+    border-radius: 50%;
+}
+
+.temp{
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.description{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.details > div{
+    padding: 10px;
+    background-color: azure;
+    margin: 10px;
+    flex: 1;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    form{
+        flex-direction: column;
+    }
+
+    form input[type="text"]{
+        width: 80%;
+        margin: 20px 10px ;
+    }
+}
